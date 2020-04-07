@@ -1,0 +1,50 @@
+@media ( max-width: 425px)
+
+    .table
+        tbody
+            tr
+                td
+                    &:first-child
+                        border-right: 1px solid $dark !important
+                &:last-child
+                    td
+                        &:last-child
+                            border-bottom: 1px solid $dark
+
+    header
+        .container
+            .hero
+                padding-top: 1em !important
+                background: none !important
+                .title-1
+                    font-size: 24px
+                    font-weight: 700
+                .sub-title
+                    font-size: 18px
+                    font-weight: 700
+            .services
+                margin-top: 0 !important
+                margin-bottom: 0 !important
+                .service
+                    width: 100%  !important
+                    padding: 0 !important
+                    margin-bottom: 2em
+    
+
+    .portfolio
+        .container
+            .portfolio__item
+                width: 100% !important
+                padding: 0
+    
+
+    footer 
+        font-size: 16px !important
+        .container
+            flex-direction: column
+            .footer-menu
+                margin: 2em 0
+                nav 
+                    display: flex
+                    flex-direction: column
+                    text-align: center

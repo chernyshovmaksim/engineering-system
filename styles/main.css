@@ -1,0 +1,320 @@
+@media (max-width: 425px) {
+  .table tbody tr td:first-child {
+    border-right: 1px solid #141332 !important;
+  }
+  .table tbody tr:last-child td:last-child {
+    border-bottom: 1px solid #141332;
+  }
+  header .container .hero {
+    padding-top: 1em !important;
+    background: none !important;
+  }
+  header .container .hero .title-1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  header .container .hero .sub-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  header .container .services {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  header .container .services .service {
+    width: 100%  !important;
+    padding: 0 !important;
+    margin-bottom: 2em;
+  }
+  .portfolio .container .portfolio__item {
+    width: 100% !important;
+    padding: 0;
+  }
+  footer {
+    font-size: 16px !important;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container .footer-menu {
+    margin: 2em 0;
+  }
+  footer .container .footer-menu nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  color: #636363;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.title-1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+  width: 50%;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.title-2 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+table.table {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 200 !important;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.table thead tr {
+  background-color: #141332;
+  color: #fff;
+  border-right: 1px solid #141332;
+}
+
+table.table thead tr th {
+  padding: 0.3em 1em;
+}
+
+table.table thead tr th:first-child {
+  border-right: 1px solid #fff;
+}
+
+table.table tbody tr {
+  border-bottom: 1px solid #141332;
+}
+
+table.table tbody tr td {
+  padding: 0.3em 1em;
+  border-left: 1px solid #141332;
+}
+
+table.table tbody tr td:last-child {
+  border-right: 1px solid #141332;
+}
+
+header .container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .navigation {
+  margin-top: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .navigation .right .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+}
+
+header .container .navigation .right .contacts .phone {
+  color: #141332;
+  text-align: right;
+  font-weight: 400;
+}
+
+header .container .navigation .right .contacts .callback {
+  padding: 0.6em 1em;
+  margin-top: 1em;
+  color: #141332;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #141332;
+  color: #fff;
+}
+
+header .container .hero {
+  padding: 12em 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+header .container .hero .hero__btn {
+  margin-top: 3em;
+}
+
+header .container .hero .hero__btn a {
+  padding: 0.6em 1em;
+  margin-top: 1em;
+  color: #141332;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #141332;
+  color: #fff;
+  font-size: 16px;
+}
+
+header .container .services {
+  margin: 6em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+header .container .services .service {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6em;
+}
+
+header .container .services .service .service__title {
+  margin-top: 2em;
+}
+
+header .container .services .service .service__title a {
+  text-decoration: none;
+  color: #141332;
+}
+
+header .container .services .service .service__icon a img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+}
+
+section.portfolio {
+  margin-top: 12em;
+}
+
+section.portfolio .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.portfolio .container .portfolio__item {
+  width: 25%;
+  padding: 0.6em;
+}
+
+section.portfolio .container .portfolio__item a img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #141332;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5em;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+
+footer .container a {
+  color: #fff;
+}
+
+footer .container .footer-menu nav a {
+  padding: 0 0.5em;
+}
+
+footer .container .studio a {
+  color: rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=main.css.map */
