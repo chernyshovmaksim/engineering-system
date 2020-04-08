@@ -15,9 +15,7 @@ body, html
     font-family: $font
     font-weight: 400
     font-size: $font-size
-    line-height: $line-height
     color: #636363
-
 
 .container
     width: 90%
@@ -25,148 +23,103 @@ body, html
     margin: 0 auto
 .title-1
     font-weight: 400
-    font-size: 32px
+    font-size: $ss * 2
     margin: 0
     width: 50%
 .sub-title
-    font-size: 16px
+    font-size: $ss
     font-weight: 400
     color: lighten(#636363, 25%)
-
+    display: block
+    margin-top: $ss
 .title-2
-    font-size: 36px
+    font-size: $ss * 1.7
     text-align: center
-    font-weight: 700
-    margin-bottom: 2em
-
+    font-weight: 400
+    margin-bottom: $ss * 2
 .text-center
     text-align: center
-
-table.table 
-    width: 100%
-    font-size: 18px 
-    font-weight: 200 !important
-    text-align: left
-    border-collapse: collapse;
-    thead
-        tr 
-            background-color: $dark
-            color: #fff
-            border-right: 1px solid $dark
-            th
-                padding: 0.3em 1em
-                &:first-child
-                    border-right: 1px solid #fff 
-
-    tbody
-        tr 
-            border-bottom: 1px solid $dark
-            td 
-                padding: 0.3em 1em
-                border-left: 1px solid $dark
-                &:last-child
-                    border-right: 1px solid $dark
-
-
-
 
 header
     .container
         min-height: 100vh
         display: flex
         flex-direction: column
-        justify-content: space-between
+        justify-content: flex-start
         .navigation
-            margin-top: 2em
+            margin-top: $ss * 4
             width: 100%
             display: flex
             justify-content: space-between
-            align-items: center
+            align-items: flex-start
             .left
-                .hamburger
+                .hamburger-container
+                    width: $ss * 2
+                    height: $ss * 2
+                    .hamburger
+                        width: $ss * 2
+                        height: 3px 
+                        background-color: $dark
+                        position: relative
+                        &::before
+                            content: ""
+                            display: block 
+                            width: $ss
+                            height: 3px 
+                            background-color: $dark
+                            position: absolute
+                            top: 8px
+                        &::after
+                            content: ""
+                            display: block 
+                            width: 8px
+                            height: 3px 
+                            background-color: $dark
+                            position: absolute
+                            top: $ss
             .right
                 .contacts
                     display: flex 
                     flex-direction: column
-                    font-size: 16px
+                    font-size: $ss
                     .phone
                         color: $dark
                         text-align: right
                         font-weight: 400
                     .callback
-                        padding: 0.6em 1em
+                        padding: $ss/2 1em
                         margin-top: 1em
                         color: $dark 
                         text-decoration: none
-                        font-weight: 700
+                        font-weight: 400
                         border-radius: 4px
-                        background-color: $dark
-                        color: #fff
+                        border: 1px solid $dark
+                        color: $dark
+                        font-size: $ss
         .hero
-            padding: 12em 0
+            padding: $ss*12 0
             background-image: url('../images/hero-bg.jpg')
-            background-size: 300px auto
+            background-size: 540px auto
             background-repeat: no-repeat
             background-position: center right
             .hero__btn
-                margin-top: 3em
+                margin-top: $ss * 2
                 a 
-                    padding: 0.6em 1em
+                    padding: $ss/2 1em
                     margin-top: 1em
                     color: $dark 
                     text-decoration: none
-                    font-weight: 700
+                    font-weight: 400
                     border-radius: 4px
                     background-color: $dark
                     color: #fff
-                    font-size: 16px
-        .services
-            margin: 6em 0
-            display: flex
-            justify-content: space-between
-            flex-wrap: wrap
-            text-transform: uppercase
-            .service
-                width: 33.33%
-                display: flex 
-                flex-direction: column
-                justify-content: center
-                align-items: center
-                padding: 0.6em
-                .service__title
-                    margin-top: 2em
-                    a 
-                        text-decoration: none
-                        color: $dark
-                .service__icon
-                    a
-                        img 
-                            width: 100%
-                            height: 200px
-                            border-radius: 4px
-
-
-
-section.portfolio 
-    margin-top: 12em
-    .container
-        display: flex 
-        flex-wrap: wrap
-        .portfolio__item
-            width: 25%
-            padding: 0.6em
-            a 
-                img 
-                    width: 100%
-                    height: 200px
-                    border-radius: 4px
-
+                    font-size: $ss
 
 
 footer 
     background-color: $dark
     color: #fff
-    font-size: 12px
+    font-size: $ss * 0.8
     margin-top: 5em
     .container
         display: flex
@@ -178,10 +131,8 @@ footer
         .footer-menu
             nav 
                 a 
-                    padding: 0 0.5em
+                    padding: 0 $ss*0.5
         .studio
             a 
                 color: rgba(#fff, 0.5 )
-
-
 
