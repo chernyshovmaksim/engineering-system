@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
 
-
+// Mmenu Plugin
 const mmenuInit = function(){
     const menu = new MmenuLight(
         document.querySelector( "#my-menu" )

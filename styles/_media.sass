@@ -11,40 +11,36 @@
                         &:last-child
                             border-bottom: 1px solid $dark
 
+    // HEADER
     header
         .container
+            min-height: auto !important
             .hero
-                padding-top: 1em !important
+                padding: $ss*6 auto !important
                 background: none !important
                 .title-1
-                    font-size: 24px
+                    font-size: 20px
                     font-weight: 700
+                    width: 100%
                 .sub-title
-                    font-size: 18px
+                    font-size: $ss
                     font-weight: 700
-            .services
-                margin-top: 0 !important
-                margin-bottom: 0 !important
-                .service
-                    width: 100%  !important
-                    padding: 0 !important
-                    margin-bottom: 2em
+                    margin-top: $ss*0.5
+    // END HEADER
     
-
-    .portfolio
-        .container
-            .portfolio__item
-                width: 100% !important
-                padding: 0
     
-
+    
+    // FOOTER
     footer 
-        font-size: 16px !important
+        font-size: $ss !important
         .container
             flex-direction: column
             .footer-menu
-                margin: 2em 0
+                margin: $ss*2 0
                 nav 
                     display: flex
                     flex-direction: column
                     text-align: center
+                    a 
+                        margin-bottom: $ss
+    // END FOOTER
